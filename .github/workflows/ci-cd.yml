@@ -25,19 +25,19 @@ jobs:
       - name: Grant execute permission fot jest
         run: chmod +x ./node_modules/.bin/jest
 
-      # Step 3: Install dependencies
+      # Step 4: Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # Step 4: Run unit tests
+      # Step 5: Run unit tests
       - name: Run unit tests
         run: npm test
 
-      # Step 5: Lint the code
+      # Step 6: Lint the code
       - name: Lint code
         run: npm run lint
 
-      # Step 6: Simulate deployment
+      # Step 7: Simulate deployment
       - name: Deploy to staging
         if: success()
         run: echo "Deployed to staging environment successfully!"
