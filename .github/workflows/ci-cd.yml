@@ -33,6 +33,10 @@ jobs:
       - name: Lint code
         run: npm run lint
 
+      #permission
+      - name: Grant execute permission fot jest
+        run: chmod +x ./node_modules/.bin/jest
+
       # Step 6: Simulate deployment
       - name: Deploy to staging
         if: success()
