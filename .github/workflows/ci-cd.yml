@@ -22,7 +22,7 @@ jobs:
           node-version: 22
       
       # step 3: permission
-      - name: Grant execute permission fot jest
+      - name: Grant execute permission for jest
         run: chmod +x ./node_modules/.bin/jest
 
       # Step 4: Install dependencies
