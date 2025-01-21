@@ -37,6 +37,14 @@ jobs:
       - name: Lint code
         run: npm run lint
 
+      - name: Check Node.js, npm, ESLint, and Jest versions
+  run: |
+    node -v
+    npm -v
+    npx eslint --version
+    npx jest --version
+
+
       # Step 7: Simulate deployment
       - name: Deploy to staging
         if: success()
