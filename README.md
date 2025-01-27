@@ -1,8 +1,5 @@
 Instructions for the CI/CD pipeline:
 
-markdown
-Copy
-Edit
 # CI/CD Pipeline for Task 3
 
 ## Overview
@@ -12,11 +9,8 @@ This pipeline automates:
 3. Simulating deployment to a staging environment.
 
 ## Project Structure
-. ├── .github/ │ └── workflows/ │ └── ci-cd.yml ├── src/ │ └── app.js ├── test/ │ └── app.test.js ├── package.json ├── .eslintrc.json └── README.md
+. ├── .github/ │ └── workflows/ │ └── ci-cd.yml ├── src/ │ └── app.js ├── test/ │ └── app.test.js ├── package.json ├── .eslintrc.json └──
 
-markdown
-Copy
-Edit
 
 ## Workflow Steps
 1. **Code Checkout**: Pulls the repository code.
